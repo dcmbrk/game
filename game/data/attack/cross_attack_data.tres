@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="CrossAttackData" format=3 uid="uid://c8vfc4im1hmks"]
+
+[ext_resource type="Script" uid="uid://cfqu2xsqog73d" path="res://data/attack/cross_attack_data.gd" id="1_puvvu"]
+
+[resource]
+script = ExtResource("1_puvvu")
+name = "Cross Attack 1"
+metadata/_custom_type_script = "uid://cfqu2xsqog73d"

@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://dqetu3bq4c1ws"]
+
+[ext_resource type="Texture2D" uid="uid://b71q1de3gqdg4" path="res://assets/classes/pawnbarian.svg" id="1_8afob"]
+[ext_resource type="Script" uid="uid://b4v86qlolvrgt" path="res://scenes/player/player.gd" id="1_dovo2"]
+
+[node name="Player" type="Node2D" unique_id=1300610479]
+script = ExtResource("1_dovo2")
+
+[node name="Sprite" type="Sprite2D" parent="." unique_id=1733612080]
+texture = ExtResource("1_8afob")

@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://bp8pb620qdmkk"]
+
+[ext_resource type="Script" uid="uid://v0mpgpucjigx" path="res://scenes/small_card/small_card.gd" id="1_8oaa1"]
+[ext_resource type="Texture2D" uid="uid://dnpyu8a4fm6tr" path="res://assets/pieces/king.svg" id="1_umvf2"]
+[ext_resource type="Texture2D" uid="uid://crnmlk4eb3vbl" path="res://assets/effects/shield.svg" id="2_8oaa1"]
+[ext_resource type="Texture2D" uid="uid://co5uu3mmpog75" path="res://assets/effects/bolt.svg" id="3_frx7w"]
+
+[node name="SmallCard" type="VBoxContainer" unique_id=88791311]
+size_flags_horizontal = 4
+size_flags_vertical = 0
+script = ExtResource("1_8oaa1")
+
+[node name="Piece" type="TextureRect" parent="." unique_id=1846176623]
+layout_mode = 2
+size_flags_horizontal = 4
+texture = ExtResource("1_umvf2")
+stretch_mode = 3
+
+[node name="Effect" type="TextureRect" parent="." unique_id=1234377601]
+layout_mode = 2
+texture = ExtResource("2_8oaa1")
+stretch_mode = 3
+
+[node name="Effect2" type="TextureRect" parent="." unique_id=474670258]
+layout_mode = 2
+texture = ExtResource("3_frx7w")
+stretch_mode = 3

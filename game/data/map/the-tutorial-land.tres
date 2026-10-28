@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="MapData" format=3 uid="uid://5ty0cfonueey"]
+
+[ext_resource type="Texture2D" uid="uid://cuwshmsv2bxeq" path="res://assets/ui/map/tutorial-island.png" id="1_jk8ax"]
+[ext_resource type="Script" uid="uid://gq5dpfxd0grr" path="res://data/map/map_data.gd" id="1_vwrrc"]
+[ext_resource type="Script" uid="uid://corpqjrn6o3ku" path="res://data/level/level_data.gd" id="2_glk4r"]
+[ext_resource type="Resource" uid="uid://cnr0ldhor6ct7" path="res://data/level/tutorial-island-level-01.tres" id="3_61rdv"]
+[ext_resource type="Resource" uid="uid://yv0bhbh26eh2" path="res://data/level/tutorial-island-level-02.tres" id="4_jfjhp"]
+[ext_resource type="Resource" uid="uid://djcyhqf34uc6f" path="res://data/level/tutorial-island-level-03.tres" id="5_mqhvc"]
+
+[resource]
+script = ExtResource("1_vwrrc")
+image = ExtResource("1_jk8ax")
+levels = Array[ExtResource("2_glk4r")]([ExtResource("3_61rdv"), ExtResource("4_jfjhp"), ExtResource("5_mqhvc")])
+title = "The Tutorial Land"
+description = "Volunteer to clear this neglected manor and hopefully learn how to handle your self in less civilized placed"
+metadata/_custom_type_script = "uid://gq5dpfxd0grr"

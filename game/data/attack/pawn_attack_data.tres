@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="PawnAttackData" format=3 uid="uid://b8ry55r576pir"]
+
+[ext_resource type="Script" uid="uid://ct2tlaq4y4kgf" path="res://data/attack/pawn_attack_data.gd" id="1_s4e2e"]
+
+[resource]
+script = ExtResource("1_s4e2e")
+name = "Pawn Attack"
+metadata/_custom_type_script = "uid://bkyv62jyloxsw"

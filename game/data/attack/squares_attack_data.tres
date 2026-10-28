@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="SquaresAttackData" format=3 uid="uid://ccpaft7a7rnj1"]
+
+[ext_resource type="Script" uid="uid://dwfnawuef4g2s" path="res://data/attack/squares_attack_data.gd" id="1_r2hf3"]
+
+[resource]
+script = ExtResource("1_r2hf3")
+range = 1
+name = "Squares Attack 1"
+metadata/_custom_type_script = "uid://dwfnawuef4g2s"

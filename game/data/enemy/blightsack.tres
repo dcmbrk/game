@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="EnemyData" format=3 uid="uid://bu6wcjucqdlsa"]
+
+[ext_resource type="Script" uid="uid://cspgavu1t05mo" path="res://data/enemy/enemy_data.gd" id="1_5rxi3"]
+[ext_resource type="Resource" uid="uid://c8vfc4im1hmks" path="res://data/attack/cross_attack_data.tres" id="1_da71p"]
+
+[resource]
+script = ExtResource("1_5rxi3")
+sprite_coordinates = Vector2i(2, 5)
+discription = "Blightsack"
+type = 2
+damage = 1
+attack = ExtResource("1_da71p")
+position = Vector2(7, 2.5)
+metadata/_custom_type_script = "uid://cspgavu1t05mo"

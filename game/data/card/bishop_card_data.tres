@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="CardData" format=3 uid="uid://bpyl3rm5bcse3"]
+
+[ext_resource type="Resource" uid="uid://bsr64462xxllf" path="res://data/attack/bishop_attack_data.tres" id="1_akvb5"]
+[ext_resource type="Script" uid="uid://d2hvy6pq5c5l5" path="res://data/effect/effect_data.gd" id="2_xfy1h"]
+[ext_resource type="Script" uid="uid://jaomo1vusx84" path="res://data/card/card_data.gd" id="3_7wr6k"]
+[ext_resource type="Texture2D" uid="uid://c83q0h13j0c72" path="res://assets/pieces/bishop.svg" id="4_xfy1h"]
+
+[resource]
+script = ExtResource("3_7wr6k")
+piece = 2
+attack = ExtResource("1_akvb5")
+sprite = ExtResource("4_xfy1h")
+metadata/_custom_type_script = "uid://jaomo1vusx84"

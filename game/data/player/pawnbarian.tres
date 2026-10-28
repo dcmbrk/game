@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="PlayerData" format=3 uid="uid://bj76k3k85ufi"]
+
+[ext_resource type="Script" uid="uid://bi7noet1gdjed" path="res://data/player/player_data.gd" id="1_rfdy8"]
+[ext_resource type="Texture2D" uid="uid://b71q1de3gqdg4" path="res://assets/classes/pawnbarian.svg" id="2_xcp7e"]
+
+[resource]
+script = ExtResource("1_rfdy8")
+description = "A brave fighter of the Northern Chesslands always on the lookout for a new challenge."
+sprite = ExtResource("2_xcp7e")
+metadata/_custom_type_script = "uid://bi7noet1gdjed"

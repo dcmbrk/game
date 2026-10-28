@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://ck0r6alned3k6"]
+
+[ext_resource type="Texture2D" uid="uid://crnmlk4eb3vbl" path="res://assets/effects/shield.svg" id="1_tms7n"]
+[ext_resource type="Script" uid="uid://cpxyfjics6ce4" path="res://scenes/effect/effect.gd" id="2_amkh8"]
+
+[node name="Effect" type="TextureRect" unique_id=984145417]
+texture = ExtResource("1_tms7n")
+stretch_mode = 3
+script = ExtResource("2_amkh8")

@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="BishopAttackData" format=3 uid="uid://bsr64462xxllf"]
+
+[ext_resource type="Script" uid="uid://5qwax14chr2p" path="res://data/attack/bishop_attack_data.gd" id="1_ponpc"]
+
+[resource]
+script = ExtResource("1_ponpc")
+name = "Bishop Attack"
+metadata/_custom_type_script = "uid://bkyv62jyloxsw"

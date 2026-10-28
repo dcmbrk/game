@@ -1,0 +1,171 @@
+[gd_scene format=3 uid="uid://gpy1332k4gjr"]
+
+[ext_resource type="Script" uid="uid://cxfwfl1qqdg1k" path="res://scenes/new-game/new_game.gd" id="1_3aecn"]
+[ext_resource type="Texture2D" uid="uid://cuwshmsv2bxeq" path="res://assets/ui/map/tutorial-island.png" id="1_d68fc"]
+[ext_resource type="Script" uid="uid://gq5dpfxd0grr" path="res://data/map/map_data.gd" id="2_5upaw"]
+[ext_resource type="Texture2D" uid="uid://biepng1ra6g1a" path="res://assets/ui/map/right-arrow.png" id="2_l8hda"]
+[ext_resource type="Texture2D" uid="uid://s72jo64kpnbb" path="res://assets/ui/map/left-arrow.png" id="3_3aecn"]
+[ext_resource type="Resource" uid="uid://5ty0cfonueey" path="res://data/map/the-tutorial-land.tres" id="3_4bsou"]
+[ext_resource type="FontFile" uid="uid://2lq48lemoynf" path="res://assets/fonts/DM_Serif_Display/DMSerifDisplay-Regular.ttf" id="3_l8hda"]
+[ext_resource type="Resource" uid="uid://c6cndupgm5mhi" path="res://data/map/the-foul-shrine.tres" id="4_aynun"]
+[ext_resource type="Resource" uid="uid://dqd2jwin8bw7m" path="res://data/map/the-golem-fortress.tres" id="5_1y4pl"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_3aecn"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_uu0tc"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_4x0c8"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_tgpwn"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_5upaw"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_a6x2p"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_l8hda"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_4bsou"]
+
+[node name="NewGame" type="Node" unique_id=389394205]
+script = ExtResource("1_3aecn")
+maps = Array[ExtResource("2_5upaw")]([ExtResource("3_4bsou"), ExtResource("4_aynun"), ExtResource("5_1y4pl")])
+
+[node name="Background" type="ColorRect" parent="." unique_id=1175112555]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.03137255, 0.03137255, 0.05490196, 0.78431374)
+metadata/_edit_use_anchors_ = true
+
+[node name="Map" type="Node" parent="." unique_id=136902372]
+
+[node name="Map" type="TextureRect" parent="Map" unique_id=287446913]
+anchors_preset = -1
+anchor_left = 0.31800002
+anchor_top = 0.094000004
+anchor_right = 0.68200004
+anchor_bottom = 0.48400003
+offset_left = -0.2800293
+offset_top = -0.16000366
+offset_right = 0.27996826
+offset_bottom = 0.23999023
+grow_horizontal = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture = ExtResource("1_d68fc")
+expand_mode = 3
+
+[node name="Title" type="Label" parent="Map" unique_id=1001812498]
+anchors_preset = -1
+anchor_left = 0.40600002
+anchor_top = 0.55
+anchor_right = 0.60400003
+anchor_bottom = 0.60300004
+offset_left = 0.23999023
+offset_right = 0.15997314
+offset_bottom = 0.079956055
+theme_override_colors/font_color = Color(0.9843137, 0.9607843, 0.9372549, 1)
+theme_override_fonts/font = ExtResource("3_l8hda")
+theme_override_font_sizes/font_size = 24
+text = "The Tutorial Land"
+
+[node name="Description" type="Label" parent="Map" unique_id=316209664]
+custom_minimum_size = Vector2(100, 0)
+anchors_preset = -1
+anchor_left = 0.32700002
+anchor_top = 0.628
+anchor_right = 0.697
+anchor_bottom = 0.74500006
+offset_left = 0.07998657
+offset_top = 0.07998657
+offset_right = -0.11999512
+offset_bottom = 0.19995117
+theme_override_colors/font_color = Color(0.9843137, 0.9607843, 0.9372549, 1)
+theme_override_fonts/font = ExtResource("3_l8hda")
+text = "Volunteer to clear this neglected manor and
+hopefully learn how to handle your self in less
+civilized placed"
+horizontal_alignment = 1
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="Arrows" type="Node" parent="." unique_id=267604535]
+
+[node name="RightArrow" type="Button" parent="Arrows" unique_id=119749552]
+anchors_preset = -1
+anchor_left = 0.64400005
+anchor_top = 0.54700005
+anchor_right = 0.68700004
+anchor_bottom = 0.60200006
+offset_left = -0.24005127
+offset_top = -0.08001709
+offset_right = 0.47998047
+offset_bottom = -0.2800293
+theme_override_styles/normal = SubResource("StyleBoxEmpty_3aecn")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_uu0tc")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_4x0c8")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_tgpwn")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_5upaw")
+icon = ExtResource("2_l8hda")
+
+[node name="LeftArrow" type="Button" parent="Arrows" unique_id=204232698]
+anchors_preset = -1
+anchor_left = 0.32000002
+anchor_top = 0.54700005
+anchor_right = 0.36400002
+anchor_bottom = 0.60200006
+offset_left = -0.2000122
+offset_top = -0.08001709
+offset_right = -0.44003296
+offset_bottom = -0.2800293
+theme_override_styles/normal = SubResource("StyleBoxEmpty_3aecn")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_uu0tc")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_4x0c8")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_tgpwn")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_5upaw")
+icon = ExtResource("3_3aecn")
+
+[node name="Buttons" type="Node" parent="." unique_id=1616416477]
+
+[node name="Embark" type="Button" parent="Buttons" unique_id=1055121913]
+anchors_preset = -1
+anchor_left = 0.45900002
+anchor_top = 0.77500004
+anchor_right = 0.55200005
+anchor_bottom = 0.82800007
+offset_left = 0.35998535
+offset_top = -3.0517578e-05
+offset_right = 0.079956055
+offset_bottom = 0.079956055
+theme_override_colors/font_color = Color(0.9490196, 0.827451, 0.67058825, 1)
+theme_override_colors/font_pressed_color = Color(0.9024292, 0.72445947, 0.48667097, 1)
+theme_override_colors/font_hover_color = Color(0.96742946, 0.88648427, 0.7833812, 1)
+theme_override_fonts/font = ExtResource("3_l8hda")
+theme_override_font_sizes/font_size = 24
+theme_override_styles/normal = SubResource("StyleBoxEmpty_a6x2p")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_l8hda")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_4bsou")
+text = "Embark"
+
+[node name="Back" type="Button" parent="Buttons" unique_id=447026138]
+anchors_preset = -1
+anchor_left = 0.45900002
+anchor_top = 0.84200007
+anchor_right = 0.55200005
+anchor_bottom = 0.89500004
+offset_left = 2.3599854
+offset_top = 0.11993408
+offset_right = 0.079956055
+offset_bottom = 0.19995117
+theme_override_colors/font_color = Color(0.9490196, 0.827451, 0.67058825, 1)
+theme_override_colors/font_pressed_color = Color(0.9024292, 0.72445947, 0.48667097, 1)
+theme_override_colors/font_hover_color = Color(0.96742946, 0.88648427, 0.7833812, 1)
+theme_override_fonts/font = ExtResource("3_l8hda")
+theme_override_font_sizes/font_size = 24
+theme_override_styles/normal = SubResource("StyleBoxEmpty_a6x2p")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_l8hda")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_4bsou")
+text = "Back
+"

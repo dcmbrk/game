@@ -1,0 +1,17 @@
+[gd_resource type="Resource" script_class="CardData" format=3 uid="uid://do0ab35yrnrsj"]
+
+[ext_resource type="Resource" uid="uid://b8ry55r576pir" path="res://data/attack/pawn_attack_data.tres" id="1_pt0ob"]
+[ext_resource type="Script" uid="uid://d2hvy6pq5c5l5" path="res://data/effect/effect_data.gd" id="1_q0lqp"]
+[ext_resource type="Script" uid="uid://jaomo1vusx84" path="res://data/card/card_data.gd" id="2_arqnk"]
+[ext_resource type="Resource" uid="uid://bw8n8p07i16g3" path="res://data/effect/plus_effect.tres" id="3_2q0xf"]
+[ext_resource type="Resource" uid="uid://elyme17qba1" path="res://data/effect/shield_effect.tres" id="3_h2loo"]
+[ext_resource type="Resource" uid="uid://dvkr8cf2pk4ih" path="res://data/effect/energy_effect.tres" id="4_0udq8"]
+[ext_resource type="Texture2D" uid="uid://b4upmiudnlrfy" path="res://assets/pieces/pawn.svg" id="4_n6ugr"]
+[ext_resource type="Resource" uid="uid://4y4334jwky2k" path="res://data/effect/cross_effect.tres" id="4_ugve6"]
+
+[resource]
+script = ExtResource("2_arqnk")
+effects = Array[ExtResource("1_q0lqp")]([ExtResource("3_2q0xf"), ExtResource("4_ugve6"), ExtResource("3_h2loo"), ExtResource("4_0udq8")])
+attack = ExtResource("1_pt0ob")
+sprite = ExtResource("4_n6ugr")
+metadata/_custom_type_script = "uid://jaomo1vusx84"

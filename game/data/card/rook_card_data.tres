@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="CardData" format=3 uid="uid://verk2x2wel7y"]
+
+[ext_resource type="Resource" uid="uid://dyn4t8hljpdsx" path="res://data/attack/rook_attack_data.tres" id="1_e54x8"]
+[ext_resource type="Script" uid="uid://d2hvy6pq5c5l5" path="res://data/effect/effect_data.gd" id="2_hqaww"]
+[ext_resource type="Script" uid="uid://jaomo1vusx84" path="res://data/card/card_data.gd" id="3_immm4"]
+[ext_resource type="Texture2D" uid="uid://bb6lhxh4iqha5" path="res://assets/pieces/rook.svg" id="4_hqaww"]
+
+[resource]
+script = ExtResource("3_immm4")
+piece = 3
+attack = ExtResource("1_e54x8")
+sprite = ExtResource("4_hqaww")
+metadata/_custom_type_script = "uid://jaomo1vusx84"

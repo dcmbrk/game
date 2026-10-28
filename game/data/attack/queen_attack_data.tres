@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="QueenAttackData" format=3 uid="uid://0ou3c8afhtm5"]
+
+[ext_resource type="Script" uid="uid://cv46v3hw01q5q" path="res://data/attack/queen_attack_data.gd" id="1_de7qu"]
+
+[resource]
+script = ExtResource("1_de7qu")
+name = "Queen Attack"
+metadata/_custom_type_script = "uid://bkyv62jyloxsw"

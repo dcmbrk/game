@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="KingAttackData" format=3 uid="uid://cdcr8vt2pcphw"]
+
+[ext_resource type="Script" uid="uid://mkqdwm5xh6s5" path="res://data/attack/king_attack_data.gd" id="1_mwpqc"]
+
+[resource]
+script = ExtResource("1_mwpqc")
+name = "King Attack"
+metadata/_custom_type_script = "uid://bkyv62jyloxsw"

@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="EffectData" format=3 uid="uid://bw8n8p07i16g3"]
+
+[ext_resource type="Script" uid="uid://d2hvy6pq5c5l5" path="res://data/effect/effect_data.gd" id="1_1uk0s"]
+[ext_resource type="Texture2D" uid="uid://uv3gig8t4wbi" path="res://assets/effects/plus.svg" id="2_v6u4h"]
+
+[resource]
+script = ExtResource("1_1uk0s")
+type = 1
+sprite = ExtResource("2_v6u4h")
+metadata/_custom_type_script = "uid://d2hvy6pq5c5l5"

@@ -1,0 +1,96 @@
+[gd_resource type="Resource" script_class="DeskData" format=3 uid="uid://2iopicj7muwf"]
+
+[ext_resource type="Script" uid="uid://jaomo1vusx84" path="res://data/card/card_data.gd" id="1_cf0wl"]
+[ext_resource type="Resource" uid="uid://cdcr8vt2pcphw" path="res://data/attack/king_attack_data.tres" id="2_qb04m"]
+[ext_resource type="Script" uid="uid://bpg3xumvkte2j" path="res://data/desk/desk.gd" id="2_qwvbs"]
+[ext_resource type="Script" uid="uid://d2hvy6pq5c5l5" path="res://data/effect/effect_data.gd" id="3_h6xsk"]
+[ext_resource type="Texture2D" uid="uid://dnpyu8a4fm6tr" path="res://assets/pieces/king.svg" id="4_n2c1x"]
+[ext_resource type="Resource" uid="uid://dyn4t8hljpdsx" path="res://data/attack/rook_attack_data.tres" id="5_4fqb0"]
+[ext_resource type="Texture2D" uid="uid://bb6lhxh4iqha5" path="res://assets/pieces/rook.svg" id="6_hrj0i"]
+[ext_resource type="Resource" uid="uid://bsr64462xxllf" path="res://data/attack/bishop_attack_data.tres" id="7_tyv85"]
+[ext_resource type="Texture2D" uid="uid://c83q0h13j0c72" path="res://assets/pieces/bishop.svg" id="8_3lyj0"]
+[ext_resource type="Resource" uid="uid://ddywdkxc120lo" path="res://data/attack/knight_attack_data.tres" id="9_om4ty"]
+[ext_resource type="Texture2D" uid="uid://76jne0f0yeno" path="res://assets/pieces/knight.svg" id="10_coibf"]
+[ext_resource type="Resource" uid="uid://elyme17qba1" path="res://data/effect/shield_effect.tres" id="11_5qtk7"]
+[ext_resource type="Resource" uid="uid://4y4334jwky2k" path="res://data/effect/cross_effect.tres" id="12_vedf2"]
+[ext_resource type="Resource" uid="uid://bw8n8p07i16g3" path="res://data/effect/plus_effect.tres" id="13_8kxuc"]
+
+[sub_resource type="Resource" id="Resource_t0mkj"]
+script = ExtResource("1_cf0wl")
+attack = ExtResource("2_qb04m")
+sprite = ExtResource("4_n2c1x")
+metadata/_custom_type_script = "uid://jaomo1vusx84"
+
+[sub_resource type="Resource" id="Resource_mkf08"]
+script = ExtResource("1_cf0wl")
+attack = ExtResource("2_qb04m")
+sprite = ExtResource("4_n2c1x")
+metadata/_custom_type_script = "uid://jaomo1vusx84"
+
+[sub_resource type="Resource" id="Resource_k254t"]
+script = ExtResource("1_cf0wl")
+attack = ExtResource("5_4fqb0")
+sprite = ExtResource("6_hrj0i")
+metadata/_custom_type_script = "uid://jaomo1vusx84"
+
+[sub_resource type="Resource" id="Resource_r0r0d"]
+script = ExtResource("1_cf0wl")
+attack = ExtResource("5_4fqb0")
+sprite = ExtResource("6_hrj0i")
+metadata/_custom_type_script = "uid://jaomo1vusx84"
+
+[sub_resource type="Resource" id="Resource_aop4n"]
+script = ExtResource("1_cf0wl")
+attack = ExtResource("7_tyv85")
+sprite = ExtResource("8_3lyj0")
+metadata/_custom_type_script = "uid://jaomo1vusx84"
+
+[sub_resource type="Resource" id="Resource_gatr8"]
+script = ExtResource("1_cf0wl")
+attack = ExtResource("7_tyv85")
+sprite = ExtResource("8_3lyj0")
+metadata/_custom_type_script = "uid://jaomo1vusx84"
+
+[sub_resource type="Resource" id="Resource_tknb0"]
+script = ExtResource("1_cf0wl")
+attack = ExtResource("9_om4ty")
+sprite = ExtResource("10_coibf")
+metadata/_custom_type_script = "uid://jaomo1vusx84"
+
+[sub_resource type="Resource" id="Resource_qyidc"]
+script = ExtResource("1_cf0wl")
+attack = ExtResource("9_om4ty")
+sprite = ExtResource("10_coibf")
+metadata/_custom_type_script = "uid://jaomo1vusx84"
+
+[sub_resource type="Resource" id="Resource_tqojx"]
+script = ExtResource("1_cf0wl")
+attack = ExtResource("9_om4ty")
+sprite = ExtResource("10_coibf")
+metadata/_custom_type_script = "uid://jaomo1vusx84"
+
+[sub_resource type="Resource" id="Resource_fr7y4"]
+script = ExtResource("1_cf0wl")
+effects = Array[ExtResource("3_h6xsk")]([ExtResource("11_5qtk7")])
+attack = ExtResource("9_om4ty")
+sprite = ExtResource("10_coibf")
+metadata/_custom_type_script = "uid://jaomo1vusx84"
+
+[sub_resource type="Resource" id="Resource_kx48e"]
+script = ExtResource("1_cf0wl")
+effects = Array[ExtResource("3_h6xsk")]([ExtResource("11_5qtk7"), ExtResource("12_vedf2")])
+attack = ExtResource("9_om4ty")
+sprite = ExtResource("10_coibf")
+metadata/_custom_type_script = "uid://jaomo1vusx84"
+
+[sub_resource type="Resource" id="Resource_k1j5c"]
+script = ExtResource("1_cf0wl")
+effects = Array[ExtResource("3_h6xsk")]([ExtResource("12_vedf2"), ExtResource("13_8kxuc")])
+attack = ExtResource("9_om4ty")
+sprite = ExtResource("10_coibf")
+metadata/_custom_type_script = "uid://jaomo1vusx84"
+
+[resource]
+script = ExtResource("2_qwvbs")
+cards = Array[ExtResource("1_cf0wl")]([SubResource("Resource_t0mkj"), SubResource("Resource_mkf08"), SubResource("Resource_k254t"), SubResource("Resource_r0r0d"), SubResource("Resource_aop4n"), SubResource("Resource_gatr8"), SubResource("Resource_tknb0"), SubResource("Resource_qyidc"), SubResource("Resource_tqojx"), SubResource("Resource_fr7y4"), SubResource("Resource_kx48e"), SubResource("Resource_k1j5c")])
+metadata/_custom_type_script = "uid://bpg3xumvkte2j"

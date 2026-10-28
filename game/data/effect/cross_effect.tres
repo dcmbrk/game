@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="EffectData" format=3 uid="uid://4y4334jwky2k"]
+
+[ext_resource type="Script" uid="uid://d2hvy6pq5c5l5" path="res://data/effect/effect_data.gd" id="1_cd368"]
+[ext_resource type="Texture2D" uid="uid://de2ekmxn61jxn" path="res://assets/effects/cross.svg" id="2_3jrhv"]
+
+[resource]
+script = ExtResource("1_cd368")
+sprite = ExtResource("2_3jrhv")
+metadata/_custom_type_script = "uid://d2hvy6pq5c5l5"

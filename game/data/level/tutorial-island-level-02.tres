@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="LevelData" format=3 uid="uid://yv0bhbh26eh2"]
+
+[ext_resource type="Script" uid="uid://cspgavu1t05mo" path="res://data/enemy/enemy_data.gd" id="1_4sfch"]
+[ext_resource type="Resource" uid="uid://ccpaft7a7rnj1" path="res://data/attack/squares_attack_data.tres" id="2_4sfch"]
+[ext_resource type="Script" uid="uid://corpqjrn6o3ku" path="res://data/level/level_data.gd" id="3_v1ffy"]
+
+[sub_resource type="Resource" id="Resource_usuhg"]
+script = ExtResource("1_4sfch")
+damage = 1
+attack = ExtResource("2_4sfch")
+metadata/_custom_type_script = "uid://cspgavu1t05mo"
+
+[sub_resource type="Resource" id="Resource_v1ffy"]
+script = ExtResource("1_4sfch")
+type = 1
+damage = 1
+attack = ExtResource("2_4sfch")
+metadata/_custom_type_script = "uid://cspgavu1t05mo"
+
+[resource]
+script = ExtResource("3_v1ffy")
+level = 2
+enemies = Array[ExtResource("1_4sfch")]([SubResource("Resource_usuhg"), SubResource("Resource_v1ffy")])
+metadata/_custom_type_script = "uid://corpqjrn6o3ku"

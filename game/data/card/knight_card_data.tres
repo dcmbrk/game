@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="CardData" format=3 uid="uid://bwh0ydpcl3dw8"]
+
+[ext_resource type="Resource" uid="uid://ddywdkxc120lo" path="res://data/attack/knight_attack_data.tres" id="1_lxjdy"]
+[ext_resource type="Script" uid="uid://d2hvy6pq5c5l5" path="res://data/effect/effect_data.gd" id="2_3w8k5"]
+[ext_resource type="Script" uid="uid://jaomo1vusx84" path="res://data/card/card_data.gd" id="3_eb78w"]
+[ext_resource type="Texture2D" uid="uid://76jne0f0yeno" path="res://assets/pieces/knight.svg" id="4_3w8k5"]
+
+[resource]
+script = ExtResource("3_eb78w")
+piece = 1
+attack = ExtResource("1_lxjdy")
+sprite = ExtResource("4_3w8k5")
+metadata/_custom_type_script = "uid://jaomo1vusx84"

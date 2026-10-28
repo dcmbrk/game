@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="EnemyData" format=3 uid="uid://cgs0a6uoqq7d"]
+
+[ext_resource type="Script" uid="uid://cspgavu1t05mo" path="res://data/enemy/enemy_data.gd" id="1_m6ep0"]
+[ext_resource type="Resource" uid="uid://ccpaft7a7rnj1" path="res://data/attack/squares_attack_data.tres" id="1_yd7kp"]
+
+[resource]
+script = ExtResource("1_m6ep0")
+sprite_coordinates = Vector2i(1, 5)
+discription = "Blight Matron"
+type = 1
+damage = 1
+attack = ExtResource("1_yd7kp")
+position = Vector2(8, 2.5)
+metadata/_custom_type_script = "uid://cspgavu1t05mo"

@@ -1,0 +1,121 @@
+[gd_scene format=3 uid="uid://tah0w2fg7fbt"]
+
+[ext_resource type="Script" uid="uid://dbm0d1s0rw146" path="res://scenes/player_select/select_player.gd" id="1_ogoqf"]
+[ext_resource type="FontFile" uid="uid://2lq48lemoynf" path="res://assets/fonts/DM_Serif_Display/DMSerifDisplay-Regular.ttf" id="2_ek40s"]
+[ext_resource type="Script" uid="uid://bi7noet1gdjed" path="res://data/player/player_data.gd" id="2_mnbb8"]
+[ext_resource type="Resource" uid="uid://bj76k3k85ufi" path="res://data/player/pawnbarian.tres" id="3_6do5i"]
+[ext_resource type="Texture2D" uid="uid://s72jo64kpnbb" path="res://assets/ui/map/left-arrow.png" id="3_ulnsk"]
+[ext_resource type="Resource" uid="uid://by46d5cyhkvh7" path="res://data/player/knight-templar.tres" id="4_4k64b"]
+[ext_resource type="Texture2D" uid="uid://biepng1ra6g1a" path="res://assets/ui/map/right-arrow.png" id="4_ogoqf"]
+[ext_resource type="Script" uid="uid://bpg3xumvkte2j" path="res://data/desk/desk.gd" id="5_4k64b"]
+[ext_resource type="Resource" uid="uid://dyqtgh5feaksp" path="res://data/desk/pawnbarian_desk_data.tres" id="6_0cerj"]
+[ext_resource type="Texture2D" uid="uid://b71q1de3gqdg4" path="res://assets/classes/pawnbarian.svg" id="6_c7dge"]
+[ext_resource type="Resource" uid="uid://2iopicj7muwf" path="res://data/desk/knight_templar_desk_data.tres" id="7_0cerj"]
+[ext_resource type="Script" uid="uid://mfgrgovcfmf5" path="res://components/spawn_component.gd" id="12_t5ad4"]
+
+[node name="SelectPlayer" type="Node" unique_id=389394205]
+script = ExtResource("1_ogoqf")
+players = Array[ExtResource("2_mnbb8")]([ExtResource("3_6do5i"), ExtResource("4_4k64b")])
+desks = Array[ExtResource("5_4k64b")]([ExtResource("6_0cerj"), ExtResource("7_0cerj")])
+
+[node name="Background" type="ColorRect" parent="." unique_id=1175112555]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.03137255, 0.03137255, 0.05490196, 0.78431374)
+metadata/_edit_use_anchors_ = true
+metadata/_edit_lock_ = true
+
+[node name="Player" type="Node" parent="." unique_id=463170139]
+
+[node name="Player" type="TextureRect" parent="Player" unique_id=773235904]
+anchors_preset = -1
+anchor_left = 0.404
+anchor_top = 0.105000004
+anchor_right = 0.625
+anchor_bottom = 0.35300002
+offset_left = 1.1599731
+offset_top = 0.7999954
+offset_right = 1.0
+offset_bottom = 1.0799866
+texture = ExtResource("6_c7dge")
+metadata/_edit_lock_ = true
+
+[node name="Name" type="Label" parent="Player" unique_id=110103544]
+offset_left = 355.0
+offset_top = 246.0
+offset_right = 636.0
+offset_bottom = 280.0
+theme_override_colors/font_color = Color(0.9843137, 0.9607843, 0.9372549, 1)
+theme_override_fonts/font = ExtResource("2_ek40s")
+theme_override_font_sizes/font_size = 24
+text = "Pawnbarian"
+horizontal_alignment = 1
+uppercase = true
+metadata/_edit_lock_ = true
+
+[node name="Description" type="Label" parent="Player" unique_id=1184748114]
+custom_minimum_size = Vector2(150, 0)
+offset_left = 352.0
+offset_top = 290.0
+offset_right = 657.0
+offset_bottom = 339.0
+theme_override_colors/font_color = Color(0.9843137, 0.9607843, 0.9372549, 1)
+theme_override_fonts/font = ExtResource("2_ek40s")
+theme_override_font_sizes/font_size = 14
+text = "A brave fighter of the Northern Chesslands always on the lookout for a new challenge."
+horizontal_alignment = 1
+autowrap_mode = 2
+metadata/_edit_lock_ = true
+
+[node name="Desk" type="Node2D" parent="." unique_id=1448141130]
+position = Vector2(383, 370)
+metadata/_edit_lock_ = true
+
+[node name="Arrows" type="Node" parent="." unique_id=1168846401]
+
+[node name="LeftArrow" type="Button" parent="Arrows" unique_id=1709895097]
+offset_left = 320.0
+offset_top = 156.0
+offset_right = 362.0
+offset_bottom = 191.0
+icon = ExtResource("3_ulnsk")
+metadata/_edit_lock_ = true
+
+[node name="RightArrow" type="Button" parent="Arrows" unique_id=1322195390]
+offset_left = 622.0
+offset_top = 163.0
+offset_right = 664.0
+offset_bottom = 198.0
+icon = ExtResource("4_ogoqf")
+metadata/_edit_lock_ = true
+
+[node name="Buttons" type="Node" parent="." unique_id=1477012448]
+
+[node name="Embark" type="Button" parent="Buttons" unique_id=1538084964]
+offset_left = 450.0
+offset_top = 465.0
+offset_right = 547.0
+offset_bottom = 507.0
+theme_override_colors/font_color = Color(0.9490196, 0.827451, 0.67058825, 1)
+theme_override_fonts/font = ExtResource("2_ek40s")
+theme_override_font_sizes/font_size = 24
+text = "Embark"
+metadata/_edit_lock_ = true
+
+[node name="Back" type="Button" parent="Buttons" unique_id=98653601]
+offset_left = 465.0
+offset_top = 520.0
+offset_right = 528.0
+offset_bottom = 562.0
+theme_override_colors/font_color = Color(0.9490196, 0.827451, 0.67058825, 1)
+theme_override_fonts/font = ExtResource("2_ek40s")
+theme_override_font_sizes/font_size = 24
+text = "Back"
+metadata/_edit_lock_ = true
+
+[node name="SpawnComponent" type="Node" parent="." unique_id=1212140116]
+script = ExtResource("12_t5ad4")
+metadata/_custom_type_script = "uid://mfgrgovcfmf5"

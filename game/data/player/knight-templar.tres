@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="PlayerData" format=3 uid="uid://by46d5cyhkvh7"]
+
+[ext_resource type="Script" uid="uid://bi7noet1gdjed" path="res://data/player/player_data.gd" id="1_iyyr3"]
+[ext_resource type="Texture2D" uid="uid://dkiqo5rkc7j3o" path="res://assets/classes/knight-templar.svg" id="2_dwmol"]
+
+[resource]
+script = ExtResource("1_iyyr3")
+type = 1
+description = "A towering holy warrior who mixes his divine gift with a methodical combat style. "
+sprite = ExtResource("2_dwmol")
+metadata/_custom_type_script = "uid://bi7noet1gdjed"

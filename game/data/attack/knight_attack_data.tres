@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="KnightAttackData" format=3 uid="uid://ddywdkxc120lo"]
+
+[ext_resource type="Script" uid="uid://b355hnw8lnv46" path="res://data/attack/knight_attack_data.gd" id="1_002y8"]
+
+[resource]
+script = ExtResource("1_002y8")
+name = "Knight Attack"
+metadata/_custom_type_script = "uid://bkyv62jyloxsw"

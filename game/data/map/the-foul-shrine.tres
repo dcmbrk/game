@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="MapData" format=3 uid="uid://c6cndupgm5mhi"]
+
+[ext_resource type="Texture2D" uid="uid://bohs025o6vmu1" path="res://assets/ui/map/foul-shrine.png" id="1_14it1"]
+[ext_resource type="Script" uid="uid://gq5dpfxd0grr" path="res://data/map/map_data.gd" id="1_keb52"]
+[ext_resource type="Script" uid="uid://corpqjrn6o3ku" path="res://data/level/level_data.gd" id="2_eaidf"]
+[ext_resource type="Resource" uid="uid://cnr0ldhor6ct7" path="res://data/level/tutorial-island-level-01.tres" id="3_60nmt"]
+[ext_resource type="Resource" uid="uid://yv0bhbh26eh2" path="res://data/level/tutorial-island-level-02.tres" id="4_d7q08"]
+[ext_resource type="Resource" uid="uid://djcyhqf34uc6f" path="res://data/level/tutorial-island-level-03.tres" id="5_di00y"]
+
+[resource]
+script = ExtResource("1_keb52")
+image = ExtResource("1_14it1")
+levels = Array[ExtResource("2_eaidf")]([ExtResource("3_60nmt"), ExtResource("4_d7q08"), ExtResource("5_di00y")])
+title = "The Foul Shrine"
+description = "This gruesome temple houses a portal to the Blightvoid, and occasionally spills all manner of ulcrous, tentacly, spiky horrors from over there"
+metadata/_custom_type_script = "uid://gq5dpfxd0grr"

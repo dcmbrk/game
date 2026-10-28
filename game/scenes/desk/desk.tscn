@@ -1,0 +1,40 @@
+[gd_scene format=3 uid="uid://dcw655pt7qlrh"]
+
+[ext_resource type="PackedScene" uid="uid://bp8pb620qdmkk" path="res://scenes/small_card/small_card.tscn" id="1_b7gie"]
+[ext_resource type="Script" uid="uid://bjapk7788ju58" path="res://scenes/desk/desk.gd" id="1_mkj3i"]
+
+[node name="Desk" type="HBoxContainer" unique_id=452891002]
+offset_right = 276.0
+offset_bottom = 80.0
+scale = Vector2(0.66, 0.66)
+script = ExtResource("1_mkj3i")
+
+[node name="SmallCard" parent="." unique_id=88791311 instance=ExtResource("1_b7gie")]
+layout_mode = 2
+
+[node name="SmallCard2" parent="." unique_id=1354532363 instance=ExtResource("1_b7gie")]
+layout_mode = 2
+
+[node name="SmallCard3" parent="." unique_id=2115932529 instance=ExtResource("1_b7gie")]
+layout_mode = 2
+
+[node name="SmallCard4" parent="." unique_id=1345044090 instance=ExtResource("1_b7gie")]
+layout_mode = 2
+
+[node name="SmallCard5" parent="." unique_id=891735006 instance=ExtResource("1_b7gie")]
+layout_mode = 2
+
+[node name="SmallCard6" parent="." unique_id=58812780 instance=ExtResource("1_b7gie")]
+layout_mode = 2
+
+[node name="SmallCard7" parent="." unique_id=1401484028 instance=ExtResource("1_b7gie")]
+layout_mode = 2
+
+[node name="SmallCard8" parent="." unique_id=1784435610 instance=ExtResource("1_b7gie")]
+layout_mode = 2
+
+[node name="SmallCard9" parent="." unique_id=777951731 instance=ExtResource("1_b7gie")]
+layout_mode = 2
+
+[node name="SmallCard10" parent="." unique_id=1398896729 instance=ExtResource("1_b7gie")]
+layout_mode = 2

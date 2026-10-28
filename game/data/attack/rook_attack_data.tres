@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="RookAttackData" format=3 uid="uid://dyn4t8hljpdsx"]
+
+[ext_resource type="Script" uid="uid://cerqvwudstdi0" path="res://data/attack/rook_attack_data.gd" id="1_0xqa5"]
+
+[resource]
+script = ExtResource("1_0xqa5")
+name = "Rook Attack"
+metadata/_custom_type_script = "uid://bkyv62jyloxsw"

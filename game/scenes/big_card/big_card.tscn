@@ -1,0 +1,90 @@
+[gd_scene format=3 uid="uid://cbrj5q3yvc4m6"]
+
+[ext_resource type="Script" uid="uid://s6l2oy552efm" path="res://scenes/big_card/big_card.gd" id="1_1p7hl"]
+[ext_resource type="PackedScene" uid="uid://ck0r6alned3k6" path="res://scenes/effect/effect.tscn" id="3_qpin8"]
+[ext_resource type="PackedScene" uid="uid://v7u6lc1eh5m5" path="res://scenes/piece/piece.tscn" id="4_fupgk"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lg5ar"]
+size = Vector2(68, 91)
+
+[node name="BigCard" type="Control" unique_id=1079415240]
+custom_minimum_size = Vector2(68, 90)
+custom_maximum_size = Vector2(68, 90)
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -893.0
+offset_bottom = -551.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+script = ExtResource("1_1p7hl")
+
+[node name="Border" type="ColorRect" parent="." unique_id=692532214]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0.15294118, 0.15294118, 0.26666668, 1)
+
+[node name="Background" type="ColorRect" parent="." unique_id=783385782]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 4.0
+offset_top = 4.0
+offset_right = -4.0
+offset_bottom = -4.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0.28627452, 0.3019608, 0.49411765, 1)
+
+[node name="Effects" type="HBoxContainer" parent="." unique_id=1827761334]
+layout_mode = 0
+offset_left = 6.9999995
+offset_top = 11.0
+offset_right = 74.0
+offset_bottom = 27.0
+scale = Vector2(0.8, 0.8)
+mouse_filter = 2
+alignment = 1
+
+[node name="Effect" parent="Effects" unique_id=984145417 instance=ExtResource("3_qpin8")]
+layout_mode = 2
+mouse_filter = 2
+
+[node name="Effect2" parent="Effects" unique_id=1373244330 instance=ExtResource("3_qpin8")]
+layout_mode = 2
+mouse_filter = 2
+
+[node name="Effect3" parent="Effects" unique_id=1388874506 instance=ExtResource("3_qpin8")]
+layout_mode = 2
+mouse_filter = 2
+
+[node name="Effect4" parent="Effects" unique_id=2106035795 instance=ExtResource("3_qpin8")]
+layout_mode = 2
+mouse_filter = 2
+
+[node name="Piece" parent="." unique_id=961578390 instance=ExtResource("4_fupgk")]
+layout_mode = 0
+offset_left = 21.5
+offset_top = 31.5
+offset_right = 45.5
+offset_bottom = 71.5
+mouse_filter = 2
+
+[node name="Area2D" type="Area2D" parent="." unique_id=150681730]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D" unique_id=1701416692]
+position = Vector2(34.5, 45)
+shape = SubResource("RectangleShape2D_lg5ar")
+
+[connection signal="input_event" from="Area2D" to="." method="_on_area_2d_input_event"]
+[connection signal="mouse_entered" from="Area2D" to="." method="_on_area_2d_mouse_entered"]
+[connection signal="mouse_exited" from="Area2D" to="." method="_on_area_2d_mouse_exited"]

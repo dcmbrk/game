@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://gnpkojxo7v5x"]
+
+[ext_resource type="Script" uid="uid://psa4wesp54h5" path="res://scenes/enemy/enemy.gd" id="1_a3pup"]
+[ext_resource type="Texture2D" uid="uid://ckecvcntmm3kb" path="res://assets/sprites/sprites.svg" id="2_a3pup"]
+
+[node name="Enemy" type="Node2D" unique_id=755802383 groups=["enemies"]]
+script = ExtResource("1_a3pup")
+
+[node name="Sprite" type="Sprite2D" parent="." unique_id=536803227]
+texture = ExtResource("2_a3pup")
+region_enabled = true
+region_rect = Rect2(0, 320, 64, 64)

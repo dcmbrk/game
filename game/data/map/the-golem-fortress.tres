@@ -1,0 +1,16 @@
+[gd_resource type="Resource" script_class="MapData" format=3 uid="uid://dqd2jwin8bw7m"]
+
+[ext_resource type="Texture2D" uid="uid://c8qmsuynh836n" path="res://assets/ui/map/golem-fortress.png" id="1_5162q"]
+[ext_resource type="Script" uid="uid://gq5dpfxd0grr" path="res://data/map/map_data.gd" id="1_qhyyw"]
+[ext_resource type="Script" uid="uid://corpqjrn6o3ku" path="res://data/level/level_data.gd" id="2_ouanw"]
+[ext_resource type="Resource" uid="uid://cnr0ldhor6ct7" path="res://data/level/tutorial-island-level-01.tres" id="3_5jeit"]
+[ext_resource type="Resource" uid="uid://yv0bhbh26eh2" path="res://data/level/tutorial-island-level-02.tres" id="4_6qs0t"]
+[ext_resource type="Resource" uid="uid://djcyhqf34uc6f" path="res://data/level/tutorial-island-level-03.tres" id="5_nmt54"]
+
+[resource]
+script = ExtResource("1_qhyyw")
+image = ExtResource("1_5162q")
+levels = Array[ExtResource("2_ouanw")]([ExtResource("3_5jeit"), ExtResource("4_6qs0t"), ExtResource("5_nmt54")])
+title = "The Golem Fortress"
+description = "Near the entrance of this ancient stronghold deep in the Chatu Range, you find the runic inscription: HIGH VOLTAGE, KEEP OUT"
+metadata/_custom_type_script = "uid://gq5dpfxd0grr"

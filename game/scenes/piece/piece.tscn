@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://v7u6lc1eh5m5"]
+
+[ext_resource type="Texture2D" uid="uid://dnpyu8a4fm6tr" path="res://assets/pieces/king.svg" id="1_87r1p"]
+[ext_resource type="Script" uid="uid://ctrwcp8cwt703" path="res://scenes/piece/piece.gd" id="2_huli3"]
+
+[node name="Piece" type="TextureRect" unique_id=961578390]
+size_flags_horizontal = 4
+texture = ExtResource("1_87r1p")
+stretch_mode = 3
+script = ExtResource("2_huli3")

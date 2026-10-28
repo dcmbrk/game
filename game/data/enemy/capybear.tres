@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="EnemyData" format=3 uid="uid://402y0qnu1dvd"]
+
+[ext_resource type="Script" uid="uid://cspgavu1t05mo" path="res://data/enemy/enemy_data.gd" id="1_8vo5t"]
+[ext_resource type="Resource" uid="uid://ccpaft7a7rnj1" path="res://data/attack/squares_attack_data.tres" id="1_j7i2h"]
+
+[resource]
+script = ExtResource("1_8vo5t")
+sprite_coordinates = Vector2i(0, 5)
+discription = "Capybear"
+damage = 1
+attack = ExtResource("1_j7i2h")
+position = Vector2(5, 2.5)
+metadata/_custom_type_script = "uid://cspgavu1t05mo"

@@ -1,0 +1,109 @@
+[gd_scene format=4 uid="uid://rducmo7cvr7e"]
+
+[ext_resource type="TileSet" uid="uid://dfhr57hxlqi24" path="res://assets/sprites/sprites.tres" id="1_h3e3j"]
+[ext_resource type="Script" uid="uid://c0e1ot5re6do4" path="res://scenes/level/level.gd" id="1_qkmgm"]
+[ext_resource type="Script" uid="uid://dsqnqsq83vl8y" path="res://scenes/level/scener.gd" id="6_vpf64"]
+[ext_resource type="Script" uid="uid://cae0rkns61sqe" path="res://scenes/level/board.gd" id="6_xv074"]
+[ext_resource type="Script" uid="uid://dw77d4mh1rhxi" path="res://scenes/level/spawner.gd" id="7_sytrn"]
+[ext_resource type="PackedScene" uid="uid://dcw655pt7qlrh" path="res://scenes/desk/desk.tscn" id="7_wcngd"]
+[ext_resource type="FontFile" uid="uid://2lq48lemoynf" path="res://assets/fonts/DM_Serif_Display/DMSerifDisplay-Regular.ttf" id="7_xv074"]
+[ext_resource type="Script" uid="uid://mfgrgovcfmf5" path="res://components/spawn_component.gd" id="8_tf2q7"]
+[ext_resource type="Texture2D" uid="uid://dndw6s8ldhccl" path="res://assets/ui/skip-turn.svg" id="9_sytrn"]
+
+[node name="Level" type="Node" unique_id=880121959]
+script = ExtResource("1_qkmgm")
+
+[node name="Background" type="ColorRect" parent="." unique_id=1707699842]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+mouse_filter = 2
+color = Color(0.03137255, 0.03137255, 0.05490196, 0.78431374)
+metadata/_edit_lock_ = true
+
+[node name="Board" type="Node2D" parent="." unique_id=923871586]
+script = ExtResource("6_xv074")
+
+[node name="Units" type="TileMapLayer" parent="Board" unique_id=1677540879]
+position = Vector2(320, 96)
+tile_map_data = PackedByteArray("AAAAAAAAAAAAAAAAAAABAAAAAAABAAAAAAAEAAAAAAAAAAAAAAAAAAEAAAABAAAAAAABAAEAAAAAAAAAAAAEAAIAAAAAAAAAAAAAAAIAAAAAAAAAAAABAAMAAAAAAAAAAAAAAAQAAAAAAAAAAAACAAQAAAAAAAAAAAAEAAQAAAACAAAAAAAEAAEAAAABAAAAAAABAAIAAAABAAAAAAAAAAMAAAABAAAAAAAEAAMAAAABAAAAAAADAAQAAAABAAAAAAABAAQAAAABAAAAAAADAAUAAAADAAEAAAABAAUAAAADAAEAAAAAAAUAAAACAAEAAAACAAUAAAACAAEAAAAEAAUAAAACAAEAAAACAAEAAAABAAAAAAACAAIAAAAAAAAAAAACAAMAAAABAAAAAAADAAMAAAAAAAAAAAADAAIAAAABAAAAAAADAAEAAAAAAAAAAAADAAAAAAABAAAAAAACAAAAAAAAAAAAAAA=")
+tile_set = ExtResource("1_h3e3j")
+
+[node name="Highlights" type="TileMapLayer" parent="Board" unique_id=1025447877]
+position = Vector2(320, 96)
+tile_set = ExtResource("1_h3e3j")
+
+[node name="Hurts" type="TileMapLayer" parent="Board" unique_id=673686439]
+position = Vector2(320, 96)
+tile_set = ExtResource("1_h3e3j")
+
+[node name="Tiles" type="Node" parent="Board" unique_id=492647622]
+
+[node name="Pieces" type="Node" parent="." unique_id=842498433]
+
+[node name="Scener" type="Node" parent="." unique_id=1469535822]
+script = ExtResource("6_vpf64")
+
+[node name="Desk" type="Node" parent="." unique_id=868247095]
+
+[node name="DeskLabel" type="Label" parent="Desk" unique_id=613742743]
+offset_left = 59.0
+offset_top = 96.0
+offset_right = 251.0
+offset_bottom = 130.0
+theme_override_colors/font_color = Color(0.9843137, 0.9607843, 0.9372549, 1)
+theme_override_fonts/font = ExtResource("7_xv074")
+theme_override_font_sizes/font_size = 16
+text = "Desk"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Desk" parent="Desk" unique_id=452891002 instance=ExtResource("7_wcngd")]
+visible = false
+offset_left = 64.0
+offset_top = 125.0
+offset_right = 340.0
+offset_bottom = 221.9697
+
+[node name="Discard" type="Node" parent="." unique_id=2138935590]
+
+[node name="DiscardLabel" type="Label" parent="Discard" unique_id=1660428447]
+offset_left = 62.0
+offset_top = 287.0
+offset_right = 254.0
+offset_bottom = 321.0
+theme_override_colors/font_color = Color(0.9843137, 0.9607843, 0.9372549, 1)
+theme_override_fonts/font = ExtResource("7_xv074")
+theme_override_font_sizes/font_size = 16
+text = "Discard"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Discard" parent="Discard" unique_id=26358900 instance=ExtResource("7_wcngd")]
+visible = false
+offset_left = 64.0
+offset_top = 320.0
+offset_right = 340.0
+offset_bottom = 416.96967
+
+[node name="Spawner" type="Node" parent="." unique_id=1190854585]
+script = ExtResource("7_sytrn")
+
+[node name="SpawnComponent" type="Node" parent="Spawner" unique_id=1217922351]
+script = ExtResource("8_tf2q7")
+metadata/_custom_type_script = "uid://mfgrgovcfmf5"
+
+[node name="Hand" type="Node" parent="." unique_id=336706150]
+
+[node name="SkipTurnButton" type="Button" parent="." unique_id=553924427]
+offset_left = 647.0
+offset_top = 532.0
+offset_right = 685.0
+offset_bottom = 576.0
+icon = ExtResource("9_sytrn")
+
+[connection signal="button_down" from="SkipTurnButton" to="." method="_on_skip_turn_button_button_down"]
