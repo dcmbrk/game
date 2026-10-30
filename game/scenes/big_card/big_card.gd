@@ -12,26 +12,13 @@ var EFFECT: PackedScene = preload("res://scenes/effect/effect.tscn")
 @onready var piece: Piece = $Piece
 @onready var border: ColorRect = $Border
 
-var type: CardData.PieceType
-var sprite: CompressedTexture2D
-var effects: Array[EffectData]
-var attack: AttackData
+var card_data: CardData
 
-var down
-
-func load_data(data: CardData) -> void:
-	type = data.type
-	sprite = data.sprite
-	effects = data.effects
-	attack = data.attack
+func load_data(card_data: CardData) -> void:
+	self.card_data = card_data
 
 func export_data() -> CardData:
-	var card_data: CardData = CardData.new()
-	card_data.type = type
-	card_data.sprite = sprite
-	card_data.effects = effects
-	card_data.attack = attack
-	return card_data
+	return self.card_data
 
 func setup() -> void:
 	_clear()
@@ -44,11 +31,11 @@ func _clear() -> void:
 		child.queue_free()
 
 func _init_piece():
-	piece.texture = sprite
+	piece.texture = self.card_data.sprite
 	
 func _init_effects():
-	if effects:
-		for effect in effects:
+	if self.card_data.effects:
+		for effect in self.card_data.effects:
 			var effect_instance: Effect = EFFECT.instantiate()
 			effect_instance.texture = effect.sprite
 			effects_container.add_child(effect_instance)

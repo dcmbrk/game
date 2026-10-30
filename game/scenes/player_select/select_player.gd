@@ -17,7 +17,7 @@ const DESK: PackedScene = preload("res://scenes/desk/desk.tscn")
 
 var index: int = 0
 @onready var size: int = players.size()
-@onready var desk_instance = spawn_component.spawn_instance(DESK, Vector2.ZERO, desk)
+@onready var desk_instance = spawn_component.spawn_instance(DESK, desk)
 
 func _ready() -> void:
 	right_arrow.button_down.connect(_on_right_arrow_button_down)

@@ -4,8 +4,8 @@ extends Resource
 @export var cards: Array[CardData]
 
 func move_random_cards(desk_data: DeskData, number_cards: int) -> void:
-	if cards.is_empty():
-		return
+	#if cards.is_empty():
+		#return
 		
 	var rng = RandomNumberGenerator.new()
 	for i in number_cards:
@@ -16,8 +16,8 @@ func move_random_cards(desk_data: DeskData, number_cards: int) -> void:
 		cards.remove_at(rdn)
 		
 func move_all_cards(desk_data: DeskData):
-	if cards.is_empty():
-		return
+	#if cards.is_empty():
+		#return
 	
 	for card: CardData in cards:
 		desk_data.cards.append(card)
