@@ -2,16 +2,13 @@ class_name Hand
 extends HBoxContainer
 
 var BIGCARD: PackedScene = preload("res://scenes/big_card/big_card.tscn")
-var cards: Array[CardData]
+var desk_data: DeskData
 
 func load_data(desk_data: DeskData):
-	if desk_data:
-		cards = desk_data.cards
+	self.desk_data = desk_data
 	
 func export_data() -> DeskData:
-	var desk_data: DeskData = DeskData.new()
-	desk_data.cards = cards
-	return desk_data
+	return self.desk_data
 
 func setup() -> void:
 	_clear()
@@ -23,10 +20,9 @@ func _clear() -> void:
 		child.queue_free()
 		
 func _init_cards() -> void:
-	if cards:
-		for card_data in cards:
+	if self.desk_data.cards:
+		for card_data in self.desk_data.cards:
 			var card_instance: BigCard = BIGCARD.instantiate()
 			card_instance.load_data(card_data)
 			add_child(card_instance)
 			card_instance.setup()
-	

@@ -2,11 +2,12 @@ class_name Spawner
 extends Node
 
 @onready var spawn_component: SpawnComponent = $SpawnComponent
-@onready var desk: Node2D = $"../Desk"
-@onready var discard: Node2D = $"../Discard"
 @onready var pieces: Pieces = $"../Pieces"
 @onready var board: Board = $"../Board"
-@onready var hand: Node = $"../Hand"
+
+@onready var desk: Node2D = $"../Cards/Desk"
+@onready var discard: Node2D = $"../Cards/Discard"
+@onready var hand: Node2D = $"../Cards/Hand"
 
 const ENEMY: PackedScene = preload("res://scenes/enemy/enemy.tscn")
 const PLAYER: PackedScene = preload("res://scenes/player/player.tscn")
