@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://mwni5rnx1eau"]
+
+[ext_resource type="Texture2D" uid="uid://dryed1lm0blq0" path="res://assets/ui/shield.svg" id="1_vugyc"]
+[ext_resource type="Script" uid="uid://lh44pak3bc3n" path="res://scenes/Health/shield.gd" id="2_1vm2k"]
+
+[node name="Shield" type="TextureRect" unique_id=404405841]
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_vugyc")
+expand_mode = 3
+stretch_mode = 4
+script = ExtResource("2_1vm2k")

@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://b7gibjf8qw5vp"]
+
+[ext_resource type="Texture2D" uid="uid://qt74amppvwmc" path="res://assets/ui/health-1.svg" id="1_y7b67"]
+[ext_resource type="Script" uid="uid://cjwwsqsachdnp" path="res://scenes/Health/health.gd" id="1_y8ocw"]
+[ext_resource type="Texture2D" uid="uid://dryed1lm0blq0" path="res://assets/ui/shield.svg" id="2_brv5w"]
+
+[node name="Health" type="HBoxContainer" unique_id=997672403]
+offset_right = 40.0
+offset_bottom = 40.0
+theme_override_constants/separation = -6
+script = ExtResource("1_y8ocw")
+
+[node name="HP" type="TextureRect" parent="." unique_id=664927550]
+layout_mode = 2
+texture = ExtResource("1_y7b67")
+expand_mode = 3
+stretch_mode = 4
+
+[node name="HP2" type="TextureRect" parent="." unique_id=2117960314]
+layout_mode = 2
+texture = ExtResource("2_brv5w")
+expand_mode = 3
+stretch_mode = 4

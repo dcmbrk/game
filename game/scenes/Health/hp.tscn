@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://bhqe07drkb1wt"]
+
+[ext_resource type="Texture2D" uid="uid://qt74amppvwmc" path="res://assets/ui/health-1.svg" id="1_ctnqc"]
+[ext_resource type="Script" uid="uid://cbtxvabie0lyp" path="res://scenes/Health/hp.gd" id="2_lclhu"]
+
+[node name="HP" type="TextureRect" unique_id=404405841]
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_ctnqc")
+expand_mode = 3
+stretch_mode = 4
+script = ExtResource("2_lclhu")

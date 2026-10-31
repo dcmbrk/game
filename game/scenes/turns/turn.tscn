@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://b0auuxsrcv6d7"]
+
+[ext_resource type="Script" uid="uid://dya10auu6gxse" path="res://scenes/turns/turn.gd" id="2_3tad4"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_mspgn"]
+load_path = "res://.godot/imported/turn.svg-2fa5b6774349545ca171b563aaf9bf6f.ctex"
+
+[node name="Turn" type="TextureRect" unique_id=644183037]
+anchors_preset = -1
+anchor_right = 0.545
+anchor_bottom = 1.0
+offset_right = 0.43634033
+grow_horizontal = 2
+grow_vertical = 2
+texture = SubResource("CompressedTexture2D_mspgn")
+expand_mode = 3
+stretch_mode = 4
+script = ExtResource("2_3tad4")

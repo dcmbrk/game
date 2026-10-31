@@ -5,14 +5,24 @@
 [ext_resource type="Script" uid="uid://dbhbswasohh8c" path="res://scenes/level/pieces.gd" id="4_sytrn"]
 [ext_resource type="Script" uid="uid://dsqnqsq83vl8y" path="res://scenes/level/scener.gd" id="6_vpf64"]
 [ext_resource type="Script" uid="uid://cae0rkns61sqe" path="res://scenes/level/board.gd" id="6_xv074"]
+[ext_resource type="Script" uid="uid://crc2wnot6dkfx" path="res://scenes/turns/turns.gd" id="7_m0bv2"]
 [ext_resource type="Script" uid="uid://dw77d4mh1rhxi" path="res://scenes/level/spawner.gd" id="7_sytrn"]
 [ext_resource type="FontFile" uid="uid://2lq48lemoynf" path="res://assets/fonts/DM_Serif_Display/DMSerifDisplay-Regular.ttf" id="7_xv074"]
+[ext_resource type="Script" uid="uid://cjwwsqsachdnp" path="res://scenes/Health/health.gd" id="8_m0bv2"]
 [ext_resource type="Script" uid="uid://mfgrgovcfmf5" path="res://components/spawn_component.gd" id="8_tf2q7"]
 [ext_resource type="Texture2D" uid="uid://dndw6s8ldhccl" path="res://assets/ui/skip-turn.svg" id="9_sytrn"]
 [ext_resource type="Script" uid="uid://dxk8xplx51f8v" path="res://scenes/level/cards.gd" id="9_tf2q7"]
 
 [node name="Level" type="Node" unique_id=880121959]
 script = ExtResource("1_qkmgm")
+
+[node name="Spawner" type="Node" parent="." unique_id=615339111]
+script = ExtResource("7_sytrn")
+metadata/_custom_type_script = "uid://dw77d4mh1rhxi"
+
+[node name="SpawnComponent" type="Node" parent="Spawner" unique_id=996718462]
+script = ExtResource("8_tf2q7")
+metadata/_custom_type_script = "uid://mfgrgovcfmf5"
 
 [node name="Background" type="ColorRect" parent="." unique_id=1707699842]
 anchors_preset = 15
@@ -42,16 +52,30 @@ tile_set = ExtResource("1_h3e3j")
 position = Vector2(320, 96)
 tile_set = ExtResource("1_h3e3j")
 
-[node name="Spawner" type="Node" parent="." unique_id=615339111]
-script = ExtResource("7_sytrn")
-metadata/_custom_type_script = "uid://dw77d4mh1rhxi"
-
-[node name="SpawnComponent" type="Node" parent="Spawner" unique_id=996718462]
-script = ExtResource("8_tf2q7")
-metadata/_custom_type_script = "uid://mfgrgovcfmf5"
-
 [node name="Pieces" type="Node" parent="." unique_id=842498433]
 script = ExtResource("4_sytrn")
+
+[node name="UI" type="Node" parent="." unique_id=1106994912]
+
+[node name="Turns" type="Node2D" parent="UI" unique_id=1962647997]
+position = Vector2(580, 450)
+
+[node name="Turns" type="HBoxContainer" parent="UI/Turns" unique_id=2021108970]
+offset_right = 24.0
+offset_bottom = 24.0
+theme_override_constants/separation = -12
+script = ExtResource("7_m0bv2")
+metadata/_custom_type_script = "uid://crc2wnot6dkfx"
+
+[node name="Health" type="Node2D" parent="UI" unique_id=744810225]
+position = Vector2(323, 450)
+
+[node name="Health" type="HBoxContainer" parent="UI/Health" unique_id=1981032151]
+offset_right = 26.0
+offset_bottom = 26.0
+theme_override_constants/separation = -6
+script = ExtResource("8_m0bv2")
+metadata/_custom_type_script = "uid://cjwwsqsachdnp"
 
 [node name="Cards" type="Node" parent="." unique_id=1875773583]
 script = ExtResource("9_tf2q7")

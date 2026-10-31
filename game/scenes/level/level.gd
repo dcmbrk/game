@@ -1,7 +1,5 @@
 extends Node
 
-const DRAW_CAR_PER_TURN: int = 3
-
 @onready var scener: Node = $Scener
 @onready var pieces: Pieces = $Pieces
 @onready var cards_controller: Cards = $Cards

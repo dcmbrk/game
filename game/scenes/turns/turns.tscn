@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://bkuwf4jb8rgsy"]
+
+[ext_resource type="Script" uid="uid://crc2wnot6dkfx" path="res://scenes/turns/turns.gd" id="1_r28xf"]
+
+[node name="Turns" type="HBoxContainer" unique_id=978913953]
+propagate_maximum_size = false
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -885.0
+offset_bottom = -615.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = -6
+script = ExtResource("1_r28xf")
